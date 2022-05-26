@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+</head>
+
+<body>
+    <!--
+         ho applicato un po' di css in linea per renderlo un po' più carino
+     ho preferito fare così consapevole che lavorando con <table border:1px> avrei potuto velocizzarmi, 
+     ma per best practice, idealmente, so che potrò raggruppare attraverso i selettori i tag in questione>
+        -->
+    <table style="border: 1px solid #000;">
+        <caption>Entrate e uscite</caption>
+        <thead>
+            <tr style="border: 1px solid #000;">
+                <th style="border: 1px solid #000; border: 1px solid #000;">Mese</th>
+                <th style="border: 1px solid #000; background-color: blue;" >Entrate</th>
+                <th style="border: 1px solid #000; background-color: red;">Uscite</th>
+            </tr>
+        </thead>
+        <tbody>
+			<colgroup>
+				<col style="background-color: yellow">
+			</colgroup>
+            <tr>
+                <td style="border: 1px solid #000;">Gennaio</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Febbraio</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Marzo</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Aprile</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Maggio</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Giugno</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Luglio</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Agosto</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Settembre</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Ottobre</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Novembre</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #000;">Dicembre</td>
+                <td style="border: 1px solid #000;">10</td>
+                <td style="border: 1px solid #000;">9</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            
+            <tr>
+                
+                <td style="background-color: green;">Totale</td>
+                <td style="color: blue;" >120</td>
+                <td style="color: red">108</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+</head>
+
+<body>
+    <!--
+    button è già semanticamente individuabile da principio
+    non gli assegno un id, a differenza degli altri tag, per questo
+-->
+    <button type="submit" disabled> Sono un pulsante disabilitato :( </button>
+    </button>
+
+    <hr>
+    <div id="point-ranger">
+        <form action="localhost" method="get">
+            <span id="val-box">
+                <label for="points">Punti (da 0 a 100):</label>
+            </span>
+            <input id="range" type="range" min="0" max="100" step="2" autofocus>
+
+        </form>
+
+    </div>
+    <hr>
+    <div id="check-box">
+        <form action="localhost" method="post">
+            <!--
+        l'esercizio mi chiedeva un'unica checkbox, ma singola mi piaceva poco
+        ho comunque utilizzato checked per una checkbox soltanto :)
+    -->
+            <input type="checkbox" id="veicolo1" name="veicolo1" value="Bici" checked>
+            <label for="veicolo1">Ho una bici</label><br>
+            <input type="checkbox" id="veicolo2" name="veicolo2" value="Macchina">
+            <label for="veicolo2">Ho una macchina</label><br>
+            <input type="checkbox" id="veicolo3" name="veicolo3" value="Barca">
+            <label for="veicolo3">Ho una barca</label>
+        </form>
+    </div>
+    <hr>
+    <div id="date-selector">
+        <form action="localhost" method="post">
+            <input type="date" name="date" min="1997-01-03" max="2022-01-03">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

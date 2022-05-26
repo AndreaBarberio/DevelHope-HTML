@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<fieldset>
+
+		<legend>
+			<h1>Esercizio form con anagrafica </h1>
+		</legend>
+
+		<form action="localhost" method="post">
+
+			<label for="Nome">Nome:</label>
+			<input type="text" name="Nome" required readonly>
+
+			<label for="Cognome">Cognome:</label>
+			<input type="text" name="Cognome" required>
+
+			<label for="email">Email:</label>
+			<input type="email" name="email" required>
+
+			<label for="password">Password:</label>
+			<input type="password" name="password" placeholder="Inserire Password">
+
+			<label for="Data-di-Nascita">Data di Nascita:</label>
+			<input type="date" name="Data-di-Nascita" min="1910-01-01" max="2022-03-01">
+
+			<label for="Numero-di-telefono">Numero di Telefono:</label>
+			<input type="tel" name="Numero-di-telefono" placeholder="Inserisci numero Telefonico">
+
+			<label for="Piano Tariffario">Piano Tariffario con Vantaggi Pro :</label>
+			<select name="Piano Tariffario" id="Piano Tariffario">
+				<option value="Opzione vuota">Seleziona</option>
+				<option value="Opzione FREE">Opzione FREE</option>
+				<option value="Opzione TOP">Opzione TOP</option>
+				<option value="Opzione PREMIUM">Opzione PREMIUM</option>
+			</select>
+
+
+			<input type="checkbox" name="checkbox" id="Vantaggi Pro" name="Vantaggi Pro" value="Vantaggi Pro" checked>
+			<label for="checkbox"></label>
+
+
+			<label for="Numero-Carta-di-Credito">Carta di Credito e data di scadenza:</label>
+			<input type="text" name="Numero-Carta-di-Credito" placeholder="Numero Carta" maxlength="16" required pattern="([0-9]){16}">
+			
+			<label for="scadenza">Scade a:</label>
+			<input type="month" name="scadenza" id="scadenza">
+			
+
+			<label for="cvc">Codice CVC:</label>
+            <input type="password" name="cvc" id="cvc" maxlength="3" required pattern="[0-9]{3}"
+				placeholder="Inserisci CVC">
+
+
+			<label for="Indirizzo di Fatturazione">Indirizzo di Fatturazione:</label>
+			<input type="text" name="Indirizzo di fatturazione" id="fatturazione" maxlength="60" required>
+
+			<button>Invia</button>
+
+
+		</form>
+	</fieldset>
+
+
+</body>
+
+</html>
